@@ -28,4 +28,5 @@ jobs:
     with:
       requirements: pelican[markdown] typogrify
       settings: pelicanconf.py
+      output-path: output/
   
