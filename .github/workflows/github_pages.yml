@@ -21,7 +21,7 @@ permissions:
   pages: write
   id-token: write
 concurrency:
-  group: "pages"
+  group: "pages-build"
   cancel-in-progress: false
 jobs:
   build:
