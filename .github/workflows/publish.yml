@@ -27,4 +27,5 @@ jobs:
     uses: ./.github/workflows/github_pages.yml
     with:
       requirements: pelican[markdown] typogrify
+      settings: pelicanconf.py
   
