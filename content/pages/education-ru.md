@@ -2,9 +2,10 @@ Title: Образование
 Slug: education
 lang: ru
 
-<img src="/sites/default/files/img/Selfpresenation2.jpg" align="right" hspace="5" vspace="5" width="228" height="336" alt="Selfpresenation2.jpg" />
 
 Степень Магистра Гуманитарных Наук в Переводе и Преподавании Английского языка, в 1983 с красным дипломом закончила Днепропетровский Государственный Университет, Украина
+
+![Iryna Beckel]({static}/images/Selfpresenation2.jpg)
 
 ### КВАЛИФИКАЦИЯ:
 
