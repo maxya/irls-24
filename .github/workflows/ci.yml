@@ -22,7 +22,7 @@ jobs:
         with:
           cache-path: ~/.cache/uv
       - name: Install dependencies
-        run: uv sync --group dev
+        run: uv sync --extra dev
       - name: Run Black auto-fix
         run: black *.py
       - name: Commit and push Black changes if any

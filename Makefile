@@ -79,10 +79,10 @@ github: publish
 	git push origin $(GITHUB_PAGES_BRANCH)
 
 install:
-	uv sync --group dev
+	uv sync --extra dev
 
 setup:
-	uv venv && uv sync --group dev && source .venv/bin/activate
+	uv venv && uv sync --extra dev && source .venv/bin/activate
 
 format:
 	black *.py
