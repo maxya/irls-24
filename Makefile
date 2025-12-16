@@ -42,6 +42,9 @@ help:
 	@echo '   make devserver [PORT=8000]          serve and regenerate together      '
 	@echo '   make devserver-global               regenerate and serve on 0.0.0.0    '
 	@echo '   make github                         upload the web site via gh-pages   '
+	@echo '   make install                        install dependencies with uv       '
+	@echo '   make setup                          setup local venv and install deps '
+	@echo '   make fmt                            auto-format Python code with Black '
 	@echo '                                                                          '
 	@echo 'Set the DEBUG variable to 1 to enable debugging, e.g. make DEBUG=1 html   '
 	@echo 'Set the RELATIVE variable to 1 to enable relative urls                    '
@@ -75,5 +78,14 @@ github: publish
 	ghp-import -m "Generate Pelican site" -b $(GITHUB_PAGES_BRANCH) "$(OUTPUTDIR)"
 	git push origin $(GITHUB_PAGES_BRANCH)
 
+install:
+	uv sync --extra dev
 
-.PHONY: html help clean regenerate serve serve-global devserver devserver-global publish github
+setup:
+	uv venv && uv sync --extra dev && source .venv/bin/activate
+
+fmt:
+	uv run black *.py && uv run flake8 --max-line-length=88 *.py
+
+
+.PHONY: html help clean regenerate serve serve-global devserver devserver-global publish github install setup fmt

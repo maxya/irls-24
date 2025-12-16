@@ -1,0 +1,32 @@
+[project]
+name = "irls-site"
+version = "0.1.0"
+dependencies = [
+    "pelican[markdown]",
+    "typogrify",
+    "ghp-import",
+    "invoke",
+    "livereload"
+]
+authors = [
+    {name = "Irina Beckel"}
+]
+
+[project.optional-dependencies]
+dev = [
+    "black",
+    "flake8",
+    "mypy"
+]
+
+[tool.black]
+line-length = 88
+target-version = ['py311']
+
+[tool.flake8]
+max-line-length = 88
+extend-ignore = ['E203']
+
+[tool.mypy]
+strict = true
+ignore-missing-imports = true

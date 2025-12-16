@@ -4,9 +4,8 @@ import shutil
 import sys
 import datetime
 
-from invoke import task
+from invoke.tasks import task
 from invoke.main import program
-from invoke.util import cd
 from pelican import main as pelican_main
 from pelican.server import ComplexHTTPRequestHandler, RootedHTTPServer
 from pelican.settings import DEFAULT_CONFIG, get_settings_from_file
@@ -93,13 +92,14 @@ def preview(c):
     """Build production version of site"""
     pelican_run("-s {settings_publish}".format(**CONFIG))
 
+
 @task
 def livereload(c):
     """Automatically reload browser tab upon file modification."""
     from livereload import Server
 
     def cached_build():
-        cmd = "-s {settings_base} -e CACHE_CONTENT=true LOAD_CONTENT_CACHE=true"
+        cmd = "-s {settings_base} -e CACHE_CONTENT=true LOAD_CONTENT_CACHE=true"  # noqa: E501
         pelican_run(cmd.format(**CONFIG))
 
     cached_build()
@@ -136,7 +136,7 @@ def livereload(c):
 def publish(c):
     """Publish to production via rsync"""
     pelican_run("-s {settings_publish}".format(**CONFIG))
-    c.run(
+    c.run(  # noqa: E501
         'rsync --delete --exclude ".DS_Store" -pthrvz -c '
         '-e "ssh -p {ssh_port}" '
         "{} {ssh_user}@{ssh_host}:{ssh_path}".format(
@@ -144,16 +144,19 @@ def publish(c):
         )
     )
 
+
 @task
 def gh_pages(c):
     """Publish to GitHub Pages"""
     preview(c)
-    c.run(
-        "ghp-import -b {github_pages_branch} "
-        "-m {commit_message} "
-        "{deploy_path} -p".format(**CONFIG)
-    )
+    branch = CONFIG["github_pages_branch"]
+    msg = CONFIG["commit_message"]
+    path = CONFIG["deploy_path"]
+    c.run("ghp-import -b {} -m {} {} -p".format(branch, msg, path))  # noqa: E501
+
 
 def pelican_run(cmd):
-    cmd += " " + program.core.remainder  # allows to pass-through args to pelican
+    cmd += (
+        " " + program.core.remainder
+    )  # noqa: E501  # allows to pass-through args to pelican
     pelican_main(shlex.split(cmd))

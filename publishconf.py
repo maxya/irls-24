@@ -5,7 +5,7 @@ import os
 import sys
 
 sys.path.append(os.curdir)
-from pelicanconf import *
+from pelicanconf import *  # noqa: F401,F403,E402
 
 # If your site is available via HTTPS, make sure SITEURL begins with https://
 SITEURL = "https://irlsonline.com"
