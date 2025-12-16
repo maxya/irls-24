@@ -85,7 +85,7 @@ setup:
 	uv venv && uv sync --extra dev && source .venv/bin/activate
 
 format:
-	black *.py
+	uv run black *.py
 
 
 .PHONY: html help clean regenerate serve serve-global devserver devserver-global publish github install setup format

@@ -24,7 +24,7 @@ jobs:
       - name: Install dependencies
         run: uv sync --extra dev
       - name: Run Black auto-fix
-        run: black *.py
+        run: uv run black *.py
       - name: Commit and push Black changes if any
         run: |
           if ! git diff --quiet; then
@@ -35,6 +35,6 @@ jobs:
             git push
           fi
       - name: Run flake8
-        run: flake8 *.py
+        run: uv run flake8 *.py
       - name: Run mypy (optional)
-        run: mypy *.py || true
+        run: uv run mypy *.py || true
