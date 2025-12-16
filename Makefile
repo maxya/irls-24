@@ -44,7 +44,7 @@ help:
 	@echo '   make github                         upload the web site via gh-pages   '
 	@echo '   make install                        install dependencies with uv       '
 	@echo '   make setup                          setup local venv and install deps '
-	@echo '   make format                         auto-format Python code with Black '
+	@echo '   make fmt                            auto-format Python code with Black '
 	@echo '                                                                          '
 	@echo 'Set the DEBUG variable to 1 to enable debugging, e.g. make DEBUG=1 html   '
 	@echo 'Set the RELATIVE variable to 1 to enable relative urls                    '
@@ -84,8 +84,8 @@ install:
 setup:
 	uv venv && uv sync --extra dev && source .venv/bin/activate
 
-format:
+fmt:
 	uv run black *.py
 
 
-.PHONY: html help clean regenerate serve serve-global devserver devserver-global publish github install setup format
+.PHONY: html help clean regenerate serve serve-global devserver devserver-global publish github install setup fmt
