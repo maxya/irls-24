@@ -1,0 +1,40 @@
+name: CI
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+permissions:
+  contents: write
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install uv
+        uses: astral-sh/setup-uv@v1
+        with:
+          cache-path: ~/.cache/uv
+      - name: Install dependencies
+        run: uv sync --group dev
+      - name: Run Black auto-fix
+        run: black *.py
+      - name: Commit and push Black changes if any
+        run: |
+          if ! git diff --quiet; then
+            git config --global user.name 'github-actions[bot]'
+            git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+            git add -A
+            git commit -m "Auto-format Python code with Black"
+            git push
+          fi
+      - name: Run flake8
+        run: flake8 *.py
+      - name: Run mypy (optional)
+        run: mypy *.py || true
