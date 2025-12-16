@@ -1,12 +1,12 @@
-AUTHOR = 'Irina Beckel'
-SITENAME = 'iRLS'
+AUTHOR = "Irina Beckel"
+SITENAME = "iRLS"
 SITEURL = ""
 
 PATH = "content"
 
-TIMEZONE = 'US/Central'
+TIMEZONE = "US/Central"
 
-DEFAULT_LANG = 'en'
+DEFAULT_LANG = "en"
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -16,9 +16,7 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-LINKS = (
-    ("Health and Beauty", "https://healthandbeauty.live/"),
-)
+LINKS = (("Health and Beauty", "https://healthandbeauty.live/"),)
 
 # Social widget
 SOCIAL = (
@@ -31,7 +29,7 @@ DEFAULT_PAGINATION = 10
 # Uncomment following line if you want document-relative URLs when developing
 # RELATIVE_URLS = True
 
-# PLUGINS = ['i18n_subsites',] 
+# PLUGINS = ['i18n_subsites',]
 
 # # mapping: language_code -> settings_overrides_dict
 # I18N_SUBSITES = {
