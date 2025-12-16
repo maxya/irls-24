@@ -85,7 +85,7 @@ setup:
 	uv venv && uv sync --extra dev && source .venv/bin/activate
 
 fmt:
-	uv run black *.py
+	uv run black *.py && uv run flake8 --max-line-length=88 *.py
 
 
 .PHONY: html help clean regenerate serve serve-global devserver devserver-global publish github install setup fmt
