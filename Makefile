@@ -1,5 +1,4 @@
 PY?=
-PELICAN?=pelican
 PELICANOPTS=
 
 BASEDIR=$(CURDIR)
@@ -7,6 +6,13 @@ INPUTDIR=$(BASEDIR)/content
 OUTPUTDIR=$(BASEDIR)/output
 CONFFILE=$(BASEDIR)/pelicanconf.py
 PUBLISHCONF=$(BASEDIR)/publishconf.py
+
+VENV_PELICAN=$(BASEDIR)/.venv/bin/pelican
+ifeq (,$(wildcard $(VENV_PELICAN)))
+PELICAN?=pelican
+else
+PELICAN?=$(VENV_PELICAN)
+endif
 
 GITHUB_PAGES_BRANCH=gh-pages
 
@@ -82,7 +88,8 @@ install:
 	uv sync --extra dev
 
 setup:
-	uv venv && uv sync --extra dev && source .venv/bin/activate
+	uv sync --all-extras
+	@echo "Setup complete. Activate your environment with: source .venv/bin/activate"
 
 fmt:
 	uv run black *.py && uv run flake8 --max-line-length=88 *.py

@@ -1,12 +1,17 @@
 Title: Request a Quote
 Slug: quote
 lang: en
+Summary: Submit your document for a fast, confidential translation quote.
 
-Translation rates vary depending upon several factors including: complexity of the subject matter, delivery deadlines (rush projects cost more), project size, special formatting needs, legibility of the original document, etc. All translation projects will have to be quoted by the translator. If you would like a quote for your translation project, you can use either email form or Fax request form.
+# Request a Quote
+
+Translation rates vary depending on subject complexity, delivery deadlines (rush projects cost more), project size, formatting needs, and document legibility. All translation projects are quoted individually.
+
+If you would like a quote for your translation project, you can use either the email form or the fax request form.
 
 **Note :**
 
-Any information you provide with this quote request will be kept in the strictest confidence and will not be provided to third parties. In addition, the email address and phone number you provide with this form will only be used to contact you in regards to this project.
+Any information you provide with this quote request will be kept in strict confidence and will not be provided to third parties. Your email and phone number will be used only to contact you about this project.
 
 **Instructions:**
 
