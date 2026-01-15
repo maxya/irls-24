@@ -1,34 +1,42 @@
-Title: Professional Russian and Ukrainian Translation and Interpretation Services
+Title: Russian Translation & Interpreting Services — iRLS
 Date: 2024-01-15 10:20
 Slug: irls-home
+Summary: Certified English ⇄ Russian translation, interpreting, and tutoring with local expertise in St. Louis.
 
-Welcome to **RUSSIAN LANGUAGE SERVICES, LLC**, your trusted partner for professional two-way interpreting and translation services for English/Russian and English/Ukrainian. We cater to a diverse range of clients, from businesses to individuals, ensuring clear and accurate communication across languages.
+# Accurate English ⇄ Russian Translation and Interpreting
 
-### Our Services
+Professional language services for legal, medical, business, and personal documents — delivered with precision, confidentiality, and cultural accuracy.
 
-We offer a wide array of language services to meet your specific needs:
+**Primary CTA:** [Request a Quote]({filename}/pages/quote.md)
 
-*   **Document Translation and Notarization:** We provide certified translations for all your legal, business, and personal documents.
-*   **Interpreting Services:** Our expertise covers various domains, including:
-    *   Court Interpreting
-    *   Medical Interpreting
-    *   Metallurgical Interpreting
-*   **Business Translation:** We help you navigate the global market with accurate and culturally sensitive translations.
-*   **Language Training:** We offer personalized one-on-one language training for English and Russian, available online via Skype.
-*   **Exam Preparation:** We provide preparation assistance for Citizenship and Driver’s License exams.
+## Services
 
-### About Our Founder
+- **Document Translation & Notarization** (certified legal, business, and personal documents)
+- **Interpreting Services** (court, medical, and specialized appointments)
+- **Business Translation** (contracts, technical docs, professional correspondence)
+- **Tutoring & Exam Preparation** (English/Russian, citizenship and driver’s license exams)
+
+Explore: [Translation Services]({filename}/pages/services-translation.md) • [Russian Tutoring]({filename}/pages/services-tutoring.md) • [FAQ]({filename}/pages/faq.md)
+
+## Why iRLS
+
+- **Native Russian speaker** with advanced English proficiency
+- **15+ years** of translation, interpreting, and instruction experience
+- **Local presence** in Maryland Heights, MO with remote service worldwide
+
+## Meet Irina Beckel
 
 ![Iryna Beckel]({static}/images/Selfpresenation2.jpg)
 
-This company is led by **Iryna Beckel**, a highly qualified and experienced interpreter, translator, and instructor. With a Master of Arts in Interpreting/Translation & TESL from Dnipropetrovsk University, Ukraine, Iryna brings a wealth of knowledge and expertise to every project. Her qualifications include:
+**Irina Beckel** holds a Master of Arts in Interpreting/Translation & TESL from Dnipropetrovsk University, Ukraine. She is a certified Missouri Notary Public, a Medical Interpreter, and has completed the Missouri Court Interpreter Certification Orientation Workshop.
 
-*   **Interpreter/Translator**
-*   **English/Russian Instructor**
-*   **Philologist**
+## Questions people ask
 
-She is also certified as a Missouri Notary Public, a Medical Interpreter, and has completed the Missouri Court Interpreter Certification Orientation Workshop.
+### How much does translation cost?
+Pricing depends on language pair, document length, subject matter, and turnaround time. Most projects are quoted within 24 hours after review.
 
-### Request a Quote
+### Do you provide certified translations?
+Yes. Certified translations are available for legal, immigration, and official use.
 
-We are committed to providing high-quality language services at reasonable rates. If you have a project you'd like to discuss, please visit our [Request a Quote]({filename}/pages/quote.md) page to submit your document for a free, no-obligation estimate.
+### Do you offer remote services?
+Yes. Translation, tutoring, and many interpreting services are available remotely.
